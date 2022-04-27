@@ -496,7 +496,7 @@ if (!isset($_SESSION['username'])) {
 									<h4 class="team-member-designation">Sr. Developer</h4>
 									<ul class="social-list">
 										<li><a href="" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="https://twitter.com/deven_thorat?t=2x8UsiHq9hJtunpRe0ttBQ&s=09" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
 										<li><a href="" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
 									</ul>
 								</div>
@@ -509,7 +509,7 @@ if (!isset($_SESSION['username'])) {
 									<h4 class="team-member-name">Swapnil Shivpuje</h4>
 									<h4 class="team-member-designation">Sr. Developer</h4>
 									<ul class="social-list">
-										<li><a href="" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="https://www.facebook.com/swapnil.shivpuje.10" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
 										<li><a href="" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
 										<li><a href="" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
 									</ul>
