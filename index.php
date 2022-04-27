@@ -495,7 +495,7 @@ if (!isset($_SESSION['username'])) {
 									<h4 class="team-member-name">Deven Thorat</h4>
 									<h4 class="team-member-designation">Sr. Developer</h4>
 									<ul class="social-list">
-										<li><a href="" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="https://www.facebook.com/surendra.thorat.319" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
 										<li><a href="https://twitter.com/deven_thorat?t=2x8UsiHq9hJtunpRe0ttBQ&s=09" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
 										<li><a href="" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
 									</ul>
