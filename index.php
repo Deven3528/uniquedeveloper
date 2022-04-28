@@ -481,9 +481,9 @@ if (!isset($_SESSION['username'])) {
 									<h4 class="team-member-name">Sushant Patil</h4>
 									<h4 class="team-member-designation">CEO of Project</h4>
 									<ul class="social-list">
-										<li><a href="https://www.facebook.com/profile.php?id=100004910078558" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="https://twitter.com/SunilYa35862617" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="https://www.facebook.com/profile.php?id=100025764158388" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="https://twitter.com/Sushant26271702" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="https://www.instagram.com/sushant_patil_03/" class="social-icon icon-gray"><i class="fa fa-instagram"></i></a></li>
 									</ul>
 								</div>
 							</div>
@@ -497,7 +497,7 @@ if (!isset($_SESSION['username'])) {
 									<ul class="social-list">
 										<li><a href="https://www.facebook.com/surendra.thorat.319" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
 										<li><a href="https://twitter.com/deven_thorat?t=2x8UsiHq9hJtunpRe0ttBQ&s=09" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="" class="social-icon icon-gray"><i class="fa fa-instagram"></i></a></li>
 									</ul>
 								</div>
 							</div>
@@ -511,7 +511,7 @@ if (!isset($_SESSION['username'])) {
 									<ul class="social-list">
 										<li><a href="https://www.facebook.com/swapnil.shivpuje.10" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
 										<li><a href="" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="" class="social-icon icon-gray"><i class="fa fa-instagram"></i></a></li>
 									</ul>
 								</div>
 							</div>
@@ -525,7 +525,7 @@ if (!isset($_SESSION['username'])) {
 									<ul class="social-list">
 										<li><a href="" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
 										<li><a href="" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="" class="social-icon icon-gray"><i class="fa fa-instagram"></i></a></li>
 									</ul>
 								</div>
 							</div>
