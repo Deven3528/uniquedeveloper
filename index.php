@@ -479,7 +479,7 @@ if (!isset($_SESSION['username'])) {
 								<img src="img/sushant.jpeg" class="img-responsive">
 								<div class="team-member-info text-center">
 									<h4 class="team-member-name">Sushant Patil</h4>
-									<h4 class="team-member-designation">ceo</h4>
+									<h4 class="team-member-designation">CEO of Project</h4>
 									<ul class="social-list">
 										<li><a href="https://www.facebook.com/profile.php?id=100004910078558" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
 										<li><a href="https://twitter.com/SunilYa35862617" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
