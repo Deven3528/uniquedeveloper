@@ -3,14 +3,14 @@
 include("class/users.php");        //including the users class
 $profile=new users;               // craeting the object of user class so that we can call show_user_profile() method 
 extract($_POST);
-$profile->show_users_profile($_SESSION['username']);  //calling the show_users profile() method of users class using users class object reference
+$profile->show_users_profile($_SESSION["username"]);  //calling the show_users profile() method of users class using users class object reference
 //print_r($profile->data);
 
  ?>
 
 
 <!DOCTYPE html>
-<html>
+<html lang = "code Strike">
 <head>
   <title></title>
 
@@ -75,7 +75,7 @@ $profile->show_users_profile($_SESSION['username']);  //calling the show_users p
   <!-- tab section start -->
 
   <div class="container mt-4 col-md-10 position-relative">
-    <h3 style="font-family: 'Catamaran', sans-serif;">Welcome <?php echo $_SESSION['username']; ?>,Lets start quiz</h3>
+    <h3 style="font-family: 'Catamaran', sans-serif;">Welcome <?php echo $_SESSION["username"]; ?>,Lets start quiz</h3>
   
     <ul class="nav nav-tabs">
     <li class="nav-item">
