@@ -14,25 +14,7 @@
       <!-- <li class="nav-item">
         <a class="nav-link text-white" href="#">Link</a>
       </li> -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Our Services
-        </a>
-        <div class="dropdown-menu text-white fade" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="../programmingdemo.php">Programming Tutorials</a>
-          <a class="dropdown-item" href="../video tutorials/java/display_video_courses.php">Videos tutorials</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">online quiz</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
 

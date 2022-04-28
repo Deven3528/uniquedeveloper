@@ -20,7 +20,7 @@ if (!isset($_SESSION['username'])) {
 	<link href="https://fonts.googleapis.com/css?family=Aleo" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-	<title>Unique Developer</title>
+	<title>Code Strike</title>
 	<!----magnific popup css file for work section -->
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
 
@@ -115,7 +115,7 @@ if (!isset($_SESSION['username'])) {
 
 				</button>
 
-				<h1 style="color: white;margin-top: 10px;" id="myhead">Unique Developer</h1>
+				<h1 style="color: white;margin-top: 10px;" id="myhead">Code Strike</h1>
 			</div>
 			<div class="collapse navbar-collapse" id="navi">
                  <!------Navigation menus starts---->
@@ -620,7 +620,7 @@ if (!isset($_SESSION['username'])) {
 									<div id="collapseTwo" class="panel-collapse collapse" aria-labelledby="headingTwo">
 										<div class="panel-body">
 											<p>
-												Unique Developer is an online E-learning website <br>
+												Code Strike is an online E-learning website <br>
 												here you can learn programming languages,Tech News and improve your coding skill	
 											</p>
 										</div>
