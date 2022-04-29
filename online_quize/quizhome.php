@@ -35,7 +35,7 @@ $profile->show_users_profile($_SESSION["username"]);  //calling the show_users p
 </style>
 
 
-<body style="">
+<body>
 
 
 
