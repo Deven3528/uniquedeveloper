@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 29, 2022 at 03:18 PM
+-- Generation Time: Apr 29, 2022 at 03:53 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.13
 
@@ -176,8 +176,8 @@ CREATE TABLE `faq` (
 --
 
 INSERT INTO `faq` (`id`, `faq_title`, `faq_description`) VALUES
-(1, 'what is your website is about ?', 'this website is a free TV shows ratting website'),
-(2, 'How to rate the videos ?', 'Go to view videos section and select your favourite TV show and give ratting there'),
+(1, 'What is your website is about ?', 'This is a e-learning platform which can be used for professional online classes purposes'),
+(2, 'How one can use this platform ?', 'If you have your local classes and if you want to take your classes one further level means online, then you can use this platform .You can upload your private videos, documents, quizzes and your students can view your content . '),
 (3, 'how to log in ?', 'goto bingeflix.com/login and from there you can login');
 
 -- --------------------------------------------------------
