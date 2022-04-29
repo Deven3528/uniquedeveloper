@@ -153,13 +153,21 @@ if (!isset($_SESSION['username'])) {
 							</div>
 							<br><br>
 							<div class="social-networks">
+								<a href="#" class="fa fa-facebook"></a>
+								<a href="#" class="fa fa-twitter"></a>
+								<a href="#" class="fa fa-instagram"></a>
+								<a href="#" class="fa fa-reddit"></a>
+								<a href="#" class="fa fa-linkedin"></a>
+								<a href="#" class="fa fa-cog"></a>
+							</div>
+							<!-- <div class="social-networks">
 								<a href="https://www.facebook.com/Unique-Developer-282626055790378/?modal=admin_todo_tour" class="fa fa-facebook"></a>
 								<a href="https://twitter.com/SunilYa35862617" class="fa fa-twitter"></a>
 								<a href="https://www.instagram.com/unique_developer" class="fa fa-instagram"></a>
 								<a href="" class="fa fa-reddit"></a>
 								<a href="https://www.linkedin.com/in/sunil-yadav-70b3bb181/" class="fa fa-linkedin"></a>
 								<a href="" class="fa fa-cog"></a>
-							</div>
+							</div> -->
 					</div>
 				</div>
 			</section>
