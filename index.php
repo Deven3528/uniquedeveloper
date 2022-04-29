@@ -671,15 +671,16 @@ if (!isset($_SESSION['username'])) {
    <form>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+    <input type="email" class="form-control" id="emailadd" aria-describedby="emailHelp" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">message</label>
-    <input type="password" class="form-control"  placeholder="enter your message">
+    <label id="msgadd" for="exampleInputPassword1">message</label>
+	<textarea class="form-control" rows="7" cols="40"></textarea>
+    <!-- <input type="password" class="form-control"  placeholder="enter your message"> -->
   </div>
   
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button onclick="sendEmail()" type="submit" class="btn btn-primary">Submit</button>
 </form>
   </div>
 </div></center>
@@ -704,8 +705,30 @@ if (!isset($_SESSION['username'])) {
 
   			<!---This is script section------->
 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
 <script type="text/javascript">
 	
+	function sendEmail() {
+
+	  let mail = document.getElementById('emailadd').innerText;
+	  let msg = document.getElementById('msgadd').innerText;
+	  alert("Email is "+mail+" and msg is "+msg)
+	  console.log("Email is "+mail+" and msg is "+msg);
+    //   Email.send({
+    //     Host: "smtp.gmail.com",
+    //     Username: "sender@email_address.com",
+    //     Password: "Enter your password",
+    //     To: 'receiver@email_address.com',
+    //     From: "sender@email_address.com",
+    //     Subject: "Sending Email using javascript",
+    //     Body: "Well that was easy!!",
+    //   })
+    //     .then(function (message) {
+    //       alert("mail sent successfully")
+    //     });
+    }
+
 	var preloader=document.getElementById('loading');
 	function myfunction()
 	 {
