@@ -79,11 +79,10 @@ if (!isset($_SESSION['username'])) {
 
 	<style type="text/css">
 	
-	.servicebody
+	/* .servicebody
 	{
 		
-
-	}
+	} */
 
 
 	html
