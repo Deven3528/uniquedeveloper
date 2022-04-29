@@ -675,8 +675,8 @@ if (!isset($_SESSION['username'])) {
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
-    <label id="msgadd" for="exampleInputPassword1">message</label>
-	<textarea class="form-control" rows="7" cols="40"></textarea>
+    <label id="msgaddtxt" for="exampleInputPassword1">message</label>
+	<textarea id="msgadd" class="form-control" rows="7" cols="40"></textarea>
     <!-- <input type="password" class="form-control"  placeholder="enter your message"> -->
   </div>
   
@@ -711,22 +711,23 @@ if (!isset($_SESSION['username'])) {
 	
 	function sendEmail() {
 
-	  let mail = document.getElementById('emailadd').innerText;
-	  let msg = document.getElementById('msgadd').innerText;
+		//   let msg = document.getElementById('msgadd').value;
+	  let mail = document.getElementById('emailadd').value;
+	  let msg = document.querySelector("#msgadd").value;
 	  alert("Email is "+mail+" and msg is "+msg)
 	  console.log("Email is "+mail+" and msg is "+msg);
-    //   Email.send({
-    //     Host: "smtp.gmail.com",
-    //     Username: "sender@email_address.com",
-    //     Password: "Enter your password",
-    //     To: 'receiver@email_address.com',
-    //     From: "sender@email_address.com",
-    //     Subject: "Sending Email using javascript",
-    //     Body: "Well that was easy!!",
-    //   })
-    //     .then(function (message) {
-    //       alert("mail sent successfully")
-    //     });
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "vk5432105@gmail.com",
+        Password: "sushant5432105",
+        To: 'sushantxt123@gmail.com',
+        From: "vk5432105@gmail.com",
+        Subject: "Code Strike - Msg from @"+mail+" ",
+        Body: ""+msg,
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+        });
     }
 
 	var preloader=document.getElementById('loading');
