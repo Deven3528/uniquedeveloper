@@ -680,7 +680,7 @@ if (!isset($_SESSION['username'])) {
     <!-- <input type="password" class="form-control"  placeholder="enter your message"> -->
   </div>
   
-  <button onclick="sendEmail()" type="submit" class="btn btn-primary">Submit</button>
+  <button onclick="sendEmail()" class="btn btn-primary">Submit</button>
 </form>
   </div>
 </div></center>
@@ -714,17 +714,17 @@ if (!isset($_SESSION['username'])) {
 		//   let msg = document.getElementById('msgadd').value;
 	  let mail = document.getElementById('emailadd').value;
 	  let msg = document.querySelector("#msgadd").value;
-	  alert("Email is "+mail+" and msg is "+msg)
-	  console.log("Email is "+mail+" and msg is "+msg);
+	//   console.log("Email is "+mail+" and msg is "+msg);
       Email.send({
-        Host: "smtp.gmail.com",
-        Username: "vk5432105@gmail.com",
-        Password: "sushant5432105",
-        To: 'sushantxt123@gmail.com',
-        From: "vk5432105@gmail.com",
-        Subject: "Code Strike - Msg from @"+mail+" ",
-        Body: ""+msg,
-      })
+		  Host: "smtp.gmail.com",
+		  Username: "vk5432105@gmail.com",
+		  Password: "sushant5432105",
+		  To: 'sushantxt123@gmail.com',
+		  From: "vk5432105@gmail.com",
+		  Subject: "Code Strike - Msg from @"+mail+" ",
+		  Body: ""+msg,
+		})
+		// alert("Email is "+mail+" and msg is "+msg)
         .then(function (message) {
           alert("mail sent successfully")
         });
