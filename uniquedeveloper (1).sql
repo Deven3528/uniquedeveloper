@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 29, 2022 at 03:53 PM
+-- Generation Time: Apr 30, 2022 at 05:37 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.13
 
@@ -438,11 +438,17 @@ CREATE TABLE `videos` (
 --
 
 INSERT INTO `videos` (`video_id`, `video_path`, `video_name`, `course_name`, `video_image`) VALUES
-(51, 'https://www.youtube.com/embed/LGKniBZoxvc', 'How to download jcalender in Netbeans | Hindi', 'java', '../../uploadimg/4.png'),
-(52, 'https://www.youtube.com/embed/QmKJrnt4rQg', 'How to download jcalender in Netbeans | Hindi', 'java', '../../uploadimg/v.png'),
-(54, 'https://www.youtube.com/embed/9vIi56spxo8', 'How to do this', 'java', '../../uploadimg/ANDROID.png'),
 (56, 'https://www.youtube.com/embed/VEQYRJkoRBY', 'this is a python video', 'python', '../../uploadimg/2.png'),
-(57, 'https://www.youtube.com/embed/Yv_4RXyLjL8', 'Java Full Tutorial', 'java', '../../uploadimg/fhdhjf.png');
+(58, 'https://www.youtube.com/embed/ntLJmHOJ0ME', 'Introduction to Java + Installing Java JDK and IntelliJ IDEA for Java', 'java', '../../uploadimg/java1.png'),
+(59, 'https://www.youtube.com/embed/zIdg7hkqNE0', 'Basic Structure of a Java Program: Understanding our First Java Hello World Program', 'java', '../../uploadimg/java2.png'),
+(60, 'https://www.youtube.com/embed/X0zdAG7gfgs', 'Java Tutorial: Variables and Data Types in Java Programming', 'java', '../../uploadimg/java3.png'),
+(61, 'https://www.youtube.com/embed/b2VJmyarV3I', 'Java Tutorial: Literals in Java', 'java', '../../uploadimg/java4.png'),
+(62, 'https://www.youtube.com/embed/HRfmLqqvzUs', 'Java Tutorial: Getting User Input in Java', 'java', '../../uploadimg/java5.png'),
+(63, 'https://www.youtube.com/embed/C5me8SeuW9M', 'Java Programming Exercise 1: CBSE Board Percentage Calculator', 'java', '../../uploadimg/java6.png'),
+(64, 'https://www.youtube.com/embed/d9oF3MNzmuk', 'Java Tutorial: Chapter 1- Practice Set | Java Practice Problems With Solution', 'java', '../../uploadimg/java7.png'),
+(65, 'https://www.youtube.com/embed/pnn2VTSr1Ko', 'Java Tutorial: Operators, Types of Operators & Expressions in Java', 'java', '../../uploadimg/java8.png'),
+(66, 'https://www.youtube.com/embed/vh16INx13h4', 'Java Tutorial: Associativity of Operators in Java', 'java', '../../uploadimg/java9.png'),
+(67, 'https://www.youtube.com/embed/xGsUs3XQ0t0', 'Java Tutorial: Data Type of Expressions & Increment/Decrement Operators', 'java', '../../uploadimg/java10.png');
 
 -- --------------------------------------------------------
 
@@ -649,7 +655,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `videos`
 --
 ALTER TABLE `videos`
-  MODIFY `video_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `video_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
 
 --
 -- AUTO_INCREMENT for table `videos_demo`
