@@ -4,9 +4,9 @@
 
  session_start();
 
-   $con=mysqli_connect('localhost','root');
+   $con=mysql_connect('localhost','root');
 
-mysqli_select_db($con,'uniquedeveloper');
+mysql_select_db($con,'uniquedeveloper');
 
 
 
@@ -38,7 +38,7 @@ if (in_array($filecheck,$fileextstored)) {
 	move_uploaded_file($filetmp,$destinationfile);
 
 	$q="insert into video_info(image,description,course_name) values('$destinationfile','$coursedesc','$coursename')";
-	$r=mysqli_query($con,$q);
+	$r=mysql_query($con,$q);
 
  if ($r==true)
   {
@@ -76,7 +76,7 @@ if (in_array($filecheck,$fileextstored)) {
 	move_uploaded_file($filetmp,$destinationfile);
 
 	$q=" UPDATE video_info SET image='$destinationfile',description='$languagedesc' WHERE course_name='$languagename'";
-	$r=mysqli_query($con,$q);
+	$r=mysql_query($con,$q);
 
  if ($r==true) {
  header("location:manage_videos.php?status=updated");
@@ -103,7 +103,7 @@ if (isset($_POST['btn-delete-vid'])) {
 	
 	$course_name=$_POST['selected_course'];
 	$q="DELETE FROM video_info WHERE course_name='$course_name'";
-	$r=mysqli_query($con,$q);
+	$r=mysql_query($con,$q);
 	if ($r) 
 	{
 		header("location:manage_videos.php?status=deleted");
@@ -122,7 +122,7 @@ if (isset($_GET['id']))        //$_GET because value came from anchor tag and no
 	$course_name=$_GET['course_name'];     //to give it back to edit_video.php page
 	$vid_id=$_GET['id'];
 	$q="DELETE FROM videos WHERE video_id='$vid_id'";
-	$r=mysqli_query($con,$q);
+	$r=mysql_query($con,$q);
 	if ($r) 
 	{
 		header("location:edit_videos.php?course_name=$course_name");
@@ -160,7 +160,7 @@ if (isset($_POST['btn_add_new_vid']))
 		move_uploaded_file($filetmp,$destinationfile);
 
 		$q="insert into videos(video_path,video_name,course_name,video_image) values('$video_path','$video_title','$coursename','$destinationfile')";
-		$r=mysqli_query($con,$q);
+		$r=mysql_query($con,$q);
 
 	 if ($r==true)
 	  {

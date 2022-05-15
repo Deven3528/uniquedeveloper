@@ -1,7 +1,7 @@
 <?php
-   $con=mysqli_connect('localhost','root');
+   $con=mysql_connect('localhost','root');
 
-  mysqli_select_db($con,'uniquedeveloper');
+  mysql_select_db($con,'uniquedeveloper');
     require 'comments.inc.php';      //including comment code
 ?>
 <!DOCTYPE html>
@@ -97,8 +97,8 @@
     $_SESSION['vid']=$_GET['video_id'];
     $video_id=$_GET['video_id'];
     $sql="select * from videos where video_id='$video_id'";
-    $result=mysqli_query($con,$sql);
-    while ($row=mysqli_fetch_array($result))
+    $result=mysql_query($con,$sql);
+    while ($row=mysql_fetch_array($result))
      {
       ?>
       src=<?php echo $row['video_path'];   //fetching youtube video path from database & storing into src attribute

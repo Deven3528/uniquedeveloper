@@ -1,8 +1,8 @@
 
 <?php
 
-      $con=mysqli_connect('localhost','root');
-      mysqli_select_db($con,'uniquedeveloper');
+      $con=mysql_connect('localhost','root');
+      mysql_select_db($con,'uniquedeveloper');
 
   // =============================================================================================================
 
@@ -21,7 +21,7 @@
 	 	$qy="INSERT INTO `courses`( `topic_name`, `description`, `course_name`) VALUES ('$topicname','$description','$coursename')";
 
 
- 	mysqli_query($con,$qy);
+ 	mysql_query($con,$qy);
  	 echo "inserted";
  	header('location:../edit_topics.php?course_name='.$coursename);
  }
@@ -43,7 +43,7 @@
           $description=$_POST['editor'];
 
           $q="UPDATE `courses` SET `topic_name`='$topic_name',`description`='$description',`course_name`='$course_name' WHERE id='$course_id'";
-           $result=mysqli_query($con,$q);
+           $result=mysql_query($con,$q);
            if ($result) {
              header("location:../edit_topics.php?course_name=".$course_name);
            }

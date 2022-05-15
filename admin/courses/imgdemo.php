@@ -2,11 +2,11 @@
 
  session_start();
 
-   $con=mysqli_connect('localhost','root');
+   $con=mysql_connect('localhost','root');
 
    
 
-mysqli_select_db($con,'uniquedeveloper');
+mysql_select_db($con,'uniquedeveloper');
 
 if (isset($_POST['btn-add-course'])) {
 	$languagename=$_POST['languagename'];
@@ -29,7 +29,7 @@ if (in_array($filecheck,$fileextstored)) {
 	move_uploaded_file($filetmp,$destinationfile);
 
 	$q="insert into programming_languages(language_name,language_image,language_description) values('$languagename','$destinationfile','$languagedesc')";
-	$r=mysqli_query($con,$q);
+	$r=mysql_query($con,$q);
 
  if ($r==true) {
  header("location:admin_panel.php");
@@ -45,7 +45,7 @@ if (isset($_POST['btn-delete-course'])) {
 	
 	$course_name=$_POST['txt_course_del_id'];
 	$q="DELETE FROM programming_languages WHERE language_name='$course_name'";
-	$r=mysqli_query($con,$q);
+	$r=mysql_query($con,$q);
 	if ($r) {
 		header("location:admin_panel.php");
 	}

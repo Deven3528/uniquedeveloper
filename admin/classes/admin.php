@@ -18,7 +18,7 @@
 
  	public function __construct()
  	{
- 		$this->conn=new mysqli($this->host,$this->username,$this->pass,$this->db_name);
+ 		$this->conn=new mysql($this->host,$this->username,$this->pass,$this->db_name);
  		if ($this->conn->connect_errno)
  		 {
  			die("connection failed");
@@ -30,7 +30,7 @@
  		$query="select * from login";
  		$result=$this->conn->query($query);
  		
- 		while($row=$result->fetch_array(MYSQLI_ASSOC))
+ 		while($row=$result->fetch_array(mysql_ASSOC))
  		{
  			$this->user_details[]=$row;
  		}
@@ -44,7 +44,7 @@
  		$query="select * from programming_languages";
  		$result=$this->conn->query($query);
  		
- 		while($row=$result->fetch_array(MYSQLI_ASSOC))
+ 		while($row=$result->fetch_array(mysql_ASSOC))
  		{
  			// $this->user_details[]=
  			$this->course_count++;
@@ -66,7 +66,7 @@
 		$query="select * from video_info";
  		$result=$this->conn->query($query);
  		
- 		while($row=$result->fetch_array(MYSQLI_ASSOC))
+ 		while($row=$result->fetch_array(mysql_ASSOC))
  		{
  			// $this->user_details[]=
  			$this->video_count++;
@@ -85,7 +85,7 @@
 		$query="select * from faq";
  		$result=$this->conn->query($query);
  		
- 		while($row=$result->fetch_array(MYSQLI_ASSOC))
+ 		while($row=$result->fetch_array(mysql_ASSOC))
  		{
  			// $this->user_details[]=
  			$this->faq_list[]=$row;

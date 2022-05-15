@@ -586,16 +586,16 @@ if (!isset($_SESSION['username'])) {
 
 								<?php 
 
-								  $con=mysqli_connect('localhost','root');
+								  $con=mysql_connect('localhost','root');
 									   if (!$con) {
-									   	die('connection failed'.mysqli_connect_error());
+									   	die('connection failed'.mysql_connect_error());
 									   }
 
-									mysqli_select_db($con,'uniquedeveloper');
+									mysql_select_db($con,'uniquedeveloper');
 
 									$sql="select * from faq";
-									$result=mysqli_query($con,$sql);
-									while ($row=mysqli_fetch_array($result))
+									$result=mysql_query($con,$sql);
+									while ($row=mysql_fetch_array($result))
 									{
 					?>
 

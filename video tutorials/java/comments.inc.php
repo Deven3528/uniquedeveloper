@@ -13,7 +13,7 @@ function setComments($con)
 
 		 $sql="INSERT INTO `commentsection`(`uid`, `date`, `message`,video_id) VALUES ('$uid','$date','$message','$video_id')";
 		 // or $result=$con->query($sql);
-		 $r=mysqli_query($con,$sql);
+		 $r=mysql_query($con,$sql);
 		   // do not resubmit the form 
 
 	 }
@@ -23,8 +23,8 @@ function getComments($con)
 {
 	$video_id=$_SESSION['vid'];
 	$sql="SELECT * FROM commentsection where video_id='$video_id'";
-	$result=mysqli_query($con,$sql);
-	while ($row=mysqli_fetch_array($result)) {
+	$result=mysql_query($con,$sql);
+	while ($row=mysql_fetch_array($result)) {
 		echo "<div class='comment-box shadow bg-light'><p>";
 			echo "<b>".$row['uid']."</b>&nbsp;&nbsp;&nbsp;";
 			echo $row['date']."<br><br>";
@@ -111,7 +111,7 @@ echo '
 		 
 		 $sql="DELETE FROM commentsection where cid='$cid'"; // dont write * 
 		 // or $result=$con->query($sql);
-		 $r=mysqli_query($con,$sql);
+		 $r=mysql_query($con,$sql);
 		 
 
 
@@ -137,7 +137,7 @@ function editComment($con)
 		 
 		$sql="UPDATE `commentsection` SET `message`='$message' WHERE cid='$cid'";
 		 // // or $result=$con->query($sql);
-		  $r=mysqli_query($con,$sql);
+		  $r=mysql_query($con,$sql);
 		  
 		 //header("Location:java_videos.php");
 		 // header("Refresh:0,url=java_videos.php");        //to refresh the php page

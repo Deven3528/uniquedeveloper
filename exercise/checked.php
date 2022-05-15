@@ -7,11 +7,11 @@ if (!isset($_SESSION['username'])) {
   # code...
 }
 
-   $con = mysqli_connect('localhost','root');
+   $con = mysql_connect('localhost','root');
     // if($con){
     //  echo"connection";
     // }
-    mysqli_select_db($con,'uniquedeveloper');
+    mysql_select_db($con,'uniquedeveloper');
    ?>
 
 <!DOCTYPE html>
@@ -76,9 +76,9 @@ if (!isset($_SESSION['username'])) {
             $selected = $_POST['quizecheck'];
             
             $q1= " select * from questions ";
-            $ansresults = mysqli_query($con,$q1);
+            $ansresults = mysql_query($con,$q1);
             $i = 1;
-            while($rows = mysqli_fetch_array($ansresults)) {
+            while($rows = mysql_fetch_array($ansresults)) {
               // print_r($rows);
               $flag = $rows['ans_id'] == $selected[$i];
               
@@ -116,7 +116,7 @@ if (!isset($_SESSION['username'])) {
 
            $name=$_SESSION['username'];
       $finalresult="insert into user(username,totalques,answerscorrect) values('$name','5','$Resultans')";
-      $query=mysqli_query($con,$finalresult);
+      $query=mysql_query($con,$finalresult);
             ?>
 
 

@@ -1,11 +1,11 @@
 <?php 
 	
 	   
-	   $con=mysqli_connect('localhost','root');
+	   $con=mysql_connect('localhost','root');
 	   if (!$con) {
-	   	die('connection failed'.mysqli_connect_error());
+	   	die('connection failed'.mysql_connect_error());
 	   }
 
-	mysqli_select_db($con,'uniquedeveloper');
+	mysql_select_db($con,'uniquedeveloper');
 
  ?>

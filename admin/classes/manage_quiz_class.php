@@ -14,7 +14,7 @@ class manage_quiz_class
 
  	public function __construct()
  	{
- 		$this->conn=new mysqli($this->host,$this->username,$this->pass,$this->db_name);
+ 		$this->conn=new mysql($this->host,$this->username,$this->pass,$this->db_name);
  		if ($this->conn->connect_errno)
  		 {
  			die("connection failed");
@@ -26,7 +26,7 @@ class manage_quiz_class
  		$query="select * from category";
  		$result=$this->conn->query($query);
  		
- 		while($row=$result->fetch_array(MYSQLI_ASSOC))
+ 		while($row=$result->fetch_array(mysql_ASSOC))
  		{
  			$this->quiz_course_list[]=$row;
  		}

@@ -87,14 +87,14 @@
 <?php 
 
 
-           $con=mysqli_connect('localhost','root');
+           $con=mysql_connect('localhost','root');
 
 
-      mysqli_select_db($con,'uniquedeveloper');
+      mysql_select_db($con,'uniquedeveloper');
           $course_id=$_GET['course_id'];
           $q="select * from courses where id='$course_id'";
-      $result=mysqli_query($con,$q);
-      while ($res=mysqli_fetch_array($result)) {
+      $result=mysql_query($con,$q);
+      while ($res=mysql_fetch_array($result)) {
 
           ?>
 <div class="mt-1"><h3 class="text-center">update topic</h3></div>

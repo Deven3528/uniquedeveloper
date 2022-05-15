@@ -96,14 +96,14 @@
        		</tr>
        		<?php
 
-       		 $con=mysqli_connect('localhost','root');
+       		 $con=mysql_connect('localhost','root');
 
 
-			mysqli_select_db($con,'uniquedeveloper');
+			mysql_select_db($con,'uniquedeveloper');
        		$coursename=$_GET['course_name'];
        		$q="select * from courses where course_name='$coursename'";
-			$result=mysqli_query($con,$q);
-			while ($res=mysqli_fetch_array($result)) {
+			$result=mysql_query($con,$q);
+			while ($res=mysql_fetch_array($result)) {
         	
 
        		?>

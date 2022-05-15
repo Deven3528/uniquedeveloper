@@ -223,14 +223,14 @@ ul, ol {
 
 			   // session_start();
 
-			   $con=mysqli_connect('localhost','root');
+			   $con=mysql_connect('localhost','root');
 
 
-			mysqli_select_db($con,'uniquedeveloper');
+			mysql_select_db($con,'uniquedeveloper');
 
 			$q="select * from programming_languages";
-			$query=mysqli_query($con,$q);
-			while ($res=mysqli_fetch_array($query)) {
+			$query=mysql_query($con,$q);
+			while ($res=mysql_fetch_array($query)) {
 
 			?>
 
