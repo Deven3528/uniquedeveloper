@@ -56,7 +56,7 @@ include "../../admin/includes/navbar.php";
 		 {
 
 		 	?> 
-		 	<div class="col-md-3">
+		 	<div class="col-md-3" style="margin-bottom: 60px;">
 				<div class="card shadow mycard" style="width: 18rem; height: 7rem;">
 		 	<div class="inner">                                                  <!--  to zoom in and zoom out effect -->
 						<img class="card-img-top " style="height: 11rem;"   src=../../uploadimg/thumbnail/<?php echo $row['video_image']; ?> alt="Card image cap">
