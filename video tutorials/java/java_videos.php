@@ -203,7 +203,7 @@ getComments($con);
           
   <table class="table table-hover mt-3 table-borderless bg-light">
     <tbody>
-	<div class="card-header text-center bg-light"><h5>Popular videos</h5></div>
+	<div class="card-header text-center bg-light"><h5>Other Videos of Course</h5></div>
 
 
     	<?php 

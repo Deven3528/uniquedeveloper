@@ -55,6 +55,8 @@ $quest_data=($ques->show_questions($cat));
    {
     var minute=Math.floor(timeleft/60);   
     var second=timeleft%60;
+    // var minute=Math.floor(timeleft/60);   
+    // var second=timeleft%60;
     var min=checkMin(minute);
     var sec=checkSec(second)
     if (timeleft<=0) 
@@ -115,7 +117,7 @@ $quest_data=($ques->show_questions($cat));
 	
 <center><div class="row col-sm-7 ">
   <script type="text/javascript">
-      var timeleft=1*60;                                   //important--> the scope of javascript variable is global but not in php(we have to use global keyword)
+      var timeleft=3*60;                                   //important--> the scope of javascript variable is global but not in php(we have to use global keyword)
 
   </script>
 
