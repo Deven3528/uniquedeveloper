@@ -56,7 +56,7 @@ $course=$quiz->show_courses();
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">UNIQUE DEVELOPER</a>
+          <a class="navbar-brand" href="#">Code Strike</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
