@@ -2,8 +2,8 @@
 
 include '../classes/manage_quiz_class.php';
 
-	$con=mysql_connect('localhost','root');
-	mysql_select_db($con,'uniquedeveloper');
+	$con=mysqli_connect('localhost','root');
+	mysqli_select_db($con,'uniquedeveloper');
 	if (!$con)
 	 {
 		die('unable to coonect to database');
@@ -14,7 +14,7 @@ if (isset($_POST['btn_add_quiz_sub']))
  {
 	extract($_POST);
 	$query="insert into category values('','$course_name')";
-	$r=mysql_query($con, $query);
+	$r=mysqli_query($con, $query);
 	if ($r==true) 
 	{
 		header("Location:manage_quiz.php");
@@ -29,7 +29,7 @@ if (isset($_POST['btn_add_quiz_sub']))
  {
 	extract($_POST);
 	$query="delete from category where id='$selected_course'";
-	$r=mysql_query($con, $query);
+	$r=mysqli_query($con, $query);
 	if ($r==true) 
 	{
 		header("Location:manage_quiz.php");
@@ -65,7 +65,7 @@ $matchedanswer=array_search($answer,$array);
 echo "answer is".$matchedanswer;
 $query="insert into question_test values('','$ques','$option1','$option2','$option3','$option4','$matchedanswer','$cat')"; //$cat value comes from select name attribute
 
-// mysql_query($con,$query);
+// mysqli_query($con,$query);
 if ($quiz->add_quize($query)) 
 {
 	header("location:manage_quiz.php?run=success");

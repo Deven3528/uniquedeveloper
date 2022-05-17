@@ -13,14 +13,14 @@ include "../includes/header.php";
 <?php 
 
 
-       		 $con=mysql_connect('localhost','root');
+       		 $con=mysqli_connect('localhost','root');
 
 
-			mysql_select_db($con,'uniquedeveloper');
+			mysqli_select_db($con,'uniquedeveloper');
        		$course_id=$_GET['course_id'];
        		$q="select * from courses where id='$course_id'";
-			$result=mysql_query($con,$q);
-			while ($res=mysql_fetch_array($result)) {
+			$result=mysqli_query($con,$q);
+			while ($res=mysqli_fetch_array($result)) {
 
        		?>
 

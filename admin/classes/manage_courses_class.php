@@ -26,7 +26,7 @@ class manage_courses_class
  		$query="select * from programming_languages";
  		$result=$this->conn->query($query);
  		
- 		while($row=$result->fetch_array(mysql_ASSOC))
+ 		while($row=$result->fetch_array(mysqli_ASSOC))
  		{
  			$this->course_list[]=$row;
  		}

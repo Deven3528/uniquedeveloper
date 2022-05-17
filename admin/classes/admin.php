@@ -30,7 +30,7 @@
  		$query="select * from login";
  		$result=$this->conn->query($query);
  		
- 		while($row=$result->fetch_array(mysql_ASSOC))
+ 		while($row=$result->fetch_array(mysqli_ASSOC))
  		{
  			$this->user_details[]=$row;
  		}
@@ -44,7 +44,7 @@
  		$query="select * from programming_languages";
  		$result=$this->conn->query($query);
  		
- 		while($row=$result->fetch_array(mysql_ASSOC))
+ 		while($row=$result->fetch_array(mysqli_ASSOC))
  		{
  			// $this->user_details[]=
  			$this->course_count++;
@@ -66,7 +66,7 @@
 		$query="select * from video_info";
  		$result=$this->conn->query($query);
  		
- 		while($row=$result->fetch_array(mysql_ASSOC))
+ 		while($row=$result->fetch_array(mysqli_ASSOC))
  		{
  			// $this->user_details[]=
  			$this->video_count++;
@@ -85,7 +85,7 @@
 		$query="select * from faq";
  		$result=$this->conn->query($query);
  		
- 		while($row=$result->fetch_array(mysql_ASSOC))
+ 		while($row=$result->fetch_array(mysqli_ASSOC))
  		{
  			// $this->user_details[]=
  			$this->faq_list[]=$row;

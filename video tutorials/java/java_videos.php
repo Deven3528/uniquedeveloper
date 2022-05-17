@@ -150,8 +150,8 @@ if (!isset($_SESSION['username'])) {
 		$_SESSION['vid']=$_GET['video_id'];
 		$video_id=$_GET['video_id'];
 		$sql="select * from videos where video_id='$video_id'";
-		$result=mysql_query($con,$sql);
-		while ($row=mysql_fetch_array($result))
+		$result=mysqli_query($con,$sql);
+		while ($row=mysqli_fetch_array($result))
 		 {
 			?>
 			src=<?php echo $row['video_path'];   //fetching youtube video path from database & storing into src attribute
@@ -211,9 +211,9 @@ getComments($con);
 	$course_name=$_GET['course_name'];
 
 	$sql="select * from videos where course_name='$course_name'";
-	$result=mysql_query($con,$sql);
+	$result=mysqli_query($con,$sql);
 
-	while ($row=mysql_fetch_array($result))
+	while ($row=mysqli_fetch_array($result))
 	 {
 		
 ?>

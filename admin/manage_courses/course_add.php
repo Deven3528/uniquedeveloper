@@ -4,9 +4,9 @@
 
  session_start();
 
-   $con=mysql_connect('localhost','root');
+   $con=mysqli_connect('localhost','root');
 
-mysql_select_db($con,'uniquedeveloper');
+mysqli_select_db($con,'uniquedeveloper');
 
 // ==========================================================================================
 
@@ -34,7 +34,7 @@ if (in_array($filecheck,$fileextstored)) {
 	move_uploaded_file($filetmp,'../../uploadimg/'.$filename);
 
 	$q="insert into programming_languages(language_name,language_image,language_description) values('$languagename','$destinationfile','$languagedesc')";
-	$r=mysql_query($con,$q);
+	$r=mysqli_query($con,$q);
 
  if ($r==true) {
  header("location:manage_courses.php?status=added");
@@ -52,7 +52,7 @@ if (isset($_POST['btn-delete-course'])) {
 	
 	$course_name=$_POST['selected_course'];
 	$q="DELETE FROM programming_languages WHERE language_name='$course_name'";
-	$r=mysql_query($con,$q);
+	$r=mysqli_query($con,$q);
 	if ($r) 
 	{
 		header("location:manage_courses.php?status=deleted");
@@ -86,7 +86,7 @@ if (in_array($filecheck,$fileextstored)) {
 	move_uploaded_file($filetmp,$destinationfile);
 
 	$q=" UPDATE programming_languages SET language_image='$destinationfile',language_description='$languagedesc' WHERE language_name='$languagename'";
-	$r=mysql_query($con,$q);
+	$r=mysqli_query($con,$q);
 
  if ($r==true) {
  header("location:manage_courses.php?status=updated");
@@ -123,7 +123,7 @@ if (in_array($filecheck,$fileextstored)) {
 	move_uploaded_file($filetmp,$destinationfile);
 
 	$q="insert into programming_languages(image,description,course_name) values('$destinationfile','$coursedesc','$coursename')";
-	$r=mysql_query($con,$q);
+	$r=mysqli_query($con,$q);
 
  if ($r==true) {
  header("location:manage_courses.php?status=added");

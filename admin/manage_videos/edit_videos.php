@@ -90,15 +90,15 @@
       
 
 <?php 
-$con=mysql_connect('localhost','root');
+$con=mysqli_connect('localhost','root');
 
-mysql_select_db($con,'uniquedeveloper');
+mysqli_select_db($con,'uniquedeveloper');
 
     $course_name=$_GET['course_name'];
       $q="select * from videos where course_name='$course_name'";
       //echo $course_name;
-      $query=mysql_query($con,$q);
-      while ($row=mysql_fetch_array($query))
+      $query=mysqli_query($con,$q);
+      while ($row=mysqli_fetch_array($query))
      {
 
       ?> 

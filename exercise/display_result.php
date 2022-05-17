@@ -7,9 +7,9 @@ if (!isset($_SESSION['username'])) {
 	# code...
 }
 
- $con=mysql_connect('localhost','root');  
+ $con=mysqli_connect('localhost','root');  
 
-mysql_select_db($con,'uniquedeveloper');
+mysqli_select_db($con,'uniquedeveloper');
 $result=0;
 
 ?>
@@ -63,8 +63,8 @@ if (isset($_POST['btnsubmitques']))
 
 
 	 	$q="select * from questions";
-	 	$query=mysql_query($con,$q);
-	 	while ($row=mysql_fetch_array($query)) 
+	 	$query=mysqli_query($con,$q);
+	 	while ($row=mysqli_fetch_array($query)) 
 	 	{
 	 		echo $row['ans_id'];
 	 		$checked=$row['ans_id']==$selected[$i];
@@ -89,7 +89,7 @@ if (isset($_POST['btnsubmitques']))
 			<?php 
 			$name=$_SESSION['username'];
 			$finalresult="insert into user(username,totalques,answerscorrect) values('$name','5','$result')";
-			$query=mysql_query($con,$finalresult);
+			$query=mysqli_query($con,$finalresult);
 			 ?>
 
 			</table>

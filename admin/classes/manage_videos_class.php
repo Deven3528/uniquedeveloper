@@ -26,7 +26,7 @@ class manage_videos_class
  		$query="select * from video_info";
  		$result=$this->conn->query($query);
  		
- 		while($row=$result->fetch_array(mysql_ASSOC))
+ 		while($row=$result->fetch_array(mysqli_ASSOC))
  		{
  			$this->videos_list[]=$row;
  		}

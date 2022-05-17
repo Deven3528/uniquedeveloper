@@ -64,8 +64,8 @@ include "../../admin/includes/navbar.php";
 <?php 
 
 		$sql="select * from video_info";
-		$result=mysql_query($con,$sql);
-		while ($row=mysql_fetch_array($result))
+		$result=mysqli_query($con,$sql);
+		while ($row=mysqli_fetch_array($result))
 		 {
 
 		 	?> 
@@ -97,8 +97,8 @@ include "../../admin/includes/navbar.php";
 <?php 
 
 		$sql="select * from video_info";
-		$result=mysql_query($con,$sql);
-		while ($row=mysql_fetch_array($result))
+		$result=mysqli_query($con,$sql);
+		while ($row=mysqli_fetch_array($result))
 		 {
 			?> <button > <a ><?php  echo $row['course_name']; ?></a></button><?php 
 		}

@@ -26,7 +26,7 @@ class manage_quiz_class
  		$query="select * from category";
  		$result=$this->conn->query($query);
  		
- 		while($row=$result->fetch_array(mysql_ASSOC))
+ 		while($row=$result->fetch_array(mysqli_ASSOC))
  		{
  			$this->quiz_course_list[]=$row;
  		}

@@ -7,9 +7,9 @@ if (!isset($_SESSION['username'])) {
 	# code...
 }
 
- $con=mysql_connect('localhost','root');  
+ $con=mysqli_connect('localhost','root');  
 
-mysql_select_db($con,'uniquedeveloper');
+mysqli_select_db($con,'uniquedeveloper');
 if ($con) {
 	echo "connection success";
 }
@@ -50,9 +50,9 @@ if ($con) {
 
 
 		 $q="select * from questions where qid=$i";
-		 $query=mysql_query($con,$q);
+		 $query=mysqli_query($con,$q);
 
-		 while ($row=mysql_fetch_array($query)) {
+		 while ($row=mysqli_fetch_array($query)) {
 		 	?>
 		 	<div class="card">
 		 		<p class="card-header"><?php echo $row['question']; ?></p>
@@ -61,9 +61,9 @@ if ($con) {
 		 		<?php 
 
 		 			 $q="select * from answers where ans_id=$i";
-			 		$query=mysql_query($con,$q);
+			 		$query=mysqli_query($con,$q);
 
-		 			while ($row=mysql_fetch_array($query)) {
+		 			while ($row=mysqli_fetch_array($query)) {
 		 		
 				 ?>
 				 <div class="card-body">

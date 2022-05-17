@@ -5,8 +5,8 @@ if (isset($_POST['submitupdate'])) {
  
 
 
-           $con=mysql_connect('localhost','root');
-      mysql_select_db($con,'uniquedeveloper');
+           $con=mysqli_connect('localhost','root');
+      mysqli_select_db($con,'uniquedeveloper');
 
 
           $course_id=$_POST['cors_id'];
@@ -16,7 +16,7 @@ if (isset($_POST['submitupdate'])) {
           $description=$_POST['editor'];
 
           $q="UPDATE `courses` SET `topic_name`='$topic_name',`description`='$description',`course_name`='$course_name' WHERE id='$course_id'";
-           $result=mysql_query($con,$q);
+           $result=mysqli_query($con,$q);
            if ($result) {
              header("location:admin_edit_courses.php?course_name=".$course_name);
            }

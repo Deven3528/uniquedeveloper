@@ -110,15 +110,15 @@
 			<li style="background-color :orangered;"><a href="" >Home</a></li>
 
 <?php 
-$con=mysql_connect('localhost','root');
-mysql_select_db($con,'uniquedeveloper');
+$con=mysqli_connect('localhost','root');
+mysqli_select_db($con,'uniquedeveloper');
 $course_name=$_GET['course_name'];
 
 //$_GET['course_name'];
 // unset($_GET['course_name']);
 $q="select * from courses where course_name='$course_name'";
-$result=mysql_query($con,$q);
-while ($res=mysql_fetch_array($result)) {
+$result=mysqli_query($con,$q);
+while ($res=mysqli_fetch_array($result)) {
   ?>
 		
   			<form action="fetch_main_content.php" method="POST">
