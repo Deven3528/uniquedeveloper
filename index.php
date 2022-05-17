@@ -93,7 +93,7 @@ if (!isset($_SESSION['username'])) {
 
 </head>
 <!-- <body onload="myfunction()" style="background-color:#679ddb;"> -->
-<body onload="myfunction()" style="background-color: #e7c4f2;">
+<body onload="myfunction()" style="background-color: #dfc1f5;">
 		   <!---preloader starts	----->
 
 		   <div id="loading"></div>
