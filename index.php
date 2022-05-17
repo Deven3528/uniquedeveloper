@@ -120,7 +120,7 @@ if (!isset($_SESSION['username'])) {
                  <!------Navigation menus starts---->
 				<ul class="nav navbar-nav navbar-right">
 					<li> <a href="">Home</a></li>
-					<li> <a href="#myservice_section">Our Service</a></li>
+					<li> <a href="#myservice_section">Contents</a></li>
 					<li> <a href="#work">Works</a></li>
 					<li> <a href="#our-members">Team</a></li>
 					<li> <a href="#myfaq">FAQs</a></li>
@@ -224,9 +224,9 @@ if (!isset($_SESSION['username'])) {
          	<div class="row">
          		<div class="col-xs-12">
          			<div class="section-title text-center">
-         				<h2><b>SERVICES</b></h2>
+         				<h2><b>CONTENTs</b></h2>
          				<p>
-         					this is our serices theses are the services provided by us <br>this are the services provided by us
+         					Watch the Videos , Documents and Solve the MCQs provided by your teacher ! <br>this are the services provided by us
          				</p>
          			</div>
          		</div>
@@ -237,10 +237,9 @@ if (!isset($_SESSION['username'])) {
          				<div class="service-icon">
          					<i class="fa fa-leaf"></i>
          				</div>
-         				<h3><a href="programmingdemo.php">PROGRAMMING</a></h3>
+         				<h3><a href="programmingdemo.php">DOCUMENTS</a></h3>
          				<p>
-         					Here you will find all the lecture tutorials related to programming languages 
-         					like JAVA,PYTHON,ANDROID etc
+         					Get all the importand documents and theory notes by your provider here !
          				</p>
          			</div>
          		</div>
@@ -697,7 +696,20 @@ if (!isset($_SESSION['username'])) {
 
  			<!---footer Section Start	----->
 
+			 <footer class="text-center text-white" style="background-color: #45637d;">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Iframe -->
+    
+  <!-- Grid container -->
 
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:Group 7
+    <!-- <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a> -->
+  </div>
+  <!-- Copyright -->
+</footer>
 
  			<!---footer Section Ends	----->
 

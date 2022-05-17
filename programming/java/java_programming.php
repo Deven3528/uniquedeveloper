@@ -154,7 +154,7 @@ while ($res=mysqli_fetch_array($result)) {
 		
 		</div>
 			
-		<button id="btn_next">Next</button>
+		<!-- <button id="btn_next">Next</button> -->
 	
 	</div>
 
