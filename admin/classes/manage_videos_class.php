@@ -14,7 +14,7 @@ class manage_videos_class
 
  	public function __construct()
  	{
- 		$this->conn=new mysql($this->host,$this->username,$this->pass,$this->db_name);
+ 		$this->conn=new mysqli($this->host,$this->username,$this->pass,$this->db_name);
  		if ($this->conn->connect_errno)
  		 {
  			die("connection failed");
@@ -26,7 +26,7 @@ class manage_videos_class
  		$query="select * from video_info";
  		$result=$this->conn->query($query);
  		
- 		while($row=$result->fetch_array(mysqli_ASSOC))
+ 		while($row=$result->fetch_array(MYSQLI_ASSOC))
  		{
  			$this->videos_list[]=$row;
  		}
