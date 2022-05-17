@@ -149,7 +149,7 @@ if (!isset($_SESSION['username'])) {
 						</div>
 							<div class="cta-div">
 								<a href="" class="btn1">CONTACT US</a>
-								<a href="#myservice_section" class="btn2">LEARN TODAY</a>
+								<a href="#myservice_section" class="btn2">START LEARNING</a>
 							</div>
 							<br><br>
 							<div class="social-networks">
@@ -476,7 +476,7 @@ if (!isset($_SESSION['username'])) {
 			<div class="container text-center" id="our-members">
 				<h2><b>MEMBERS</b></h2>
 				<p>
-					These are our excellent member .you can contact anyone anytime <br> and all are experts and well experience
+					These are our excellent member .you can contact anyone anytime <br> and all are experts and well experienced !
 				</p>
 			</div>
 
@@ -571,12 +571,12 @@ if (!isset($_SESSION['username'])) {
 					<div class="row">
 						<div class="col-md-12 text-center">
 							<h2><b>GENERAL FAQs</b></h2>
-							<div class="sub-heading">
+							<!-- <div class="sub-heading">
 								<p>
 									you can ask the regarding the issues.we will <br>solve that together for sure
 								</p>
 								
-							</div>
+							</div> -->
 						</div>	
 
 					</div>
@@ -700,20 +700,7 @@ if (!isset($_SESSION['username'])) {
 
  			<!---footer Section Start	----->
 
-			 <footer class="text-center text-white" style="background-color: #45637d;">
-  <!-- Grid container -->
-  <div class="container p-4">
-    <!-- Section: Iframe -->
-    
-  <!-- Grid container -->
-
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2022 Copyright:Group 7
-    <!-- <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a> -->
-  </div>
-  <!-- Copyright -->
-</footer>
+			
 
  			<!---footer Section Ends	----->
 
