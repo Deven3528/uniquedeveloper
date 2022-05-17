@@ -121,10 +121,10 @@ if (!isset($_SESSION['username'])) {
 				<ul class="nav navbar-nav navbar-right">
 					<li> <a href="">Home</a></li>
 					<li> <a href="#myservice_section">Contents</a></li>
-					<li> <a href="#work">Works</a></li>
+					<!-- <li> <a href="#work">Works</a></li> -->
 					<li> <a href="#our-members">Team</a></li>
 					<li> <a href="#myfaq">FAQs</a></li>
-					<li> <a href="">Carrier</a></li>
+					<!-- <li> <a href="">Carrier</a></li> -->
 					<li> <a href="logout.php" id="our-location" class="btn-success" ><?php echo $_SESSION['username'];   ?></a></li>
 				</ul>
 	                 <!------Navigation menus ends---->
@@ -319,11 +319,10 @@ if (!isset($_SESSION['username'])) {
 
 			<!---Our Services Section Ends------->
 
-			<section class="work" id="work"><br>
+			<!-- <section class="work" id="work"><br>
 				<h2 id="work-heading" class="text-center" style="font-weight: bold;">OUR WORK</h2>
 				<p class="text-center">join us to improve your works join us to improve your works</p>
 				<div class="container-fluid">
-					<!---first row start-->
 					<div class="row no-gutters">
 					<div class="col-md-3 col-sm-3 col-xs-3">
 						<div class="img-wrapper">
@@ -367,10 +366,6 @@ if (!isset($_SESSION['username'])) {
 
 
 					
-					<!---first row ends-->
-
-
-					<!-------second row starts  --->
 					
 					<div class="col-md-3 col-sm-3 col-xs-3">
 						<div class="img-wrapper">
@@ -414,13 +409,12 @@ if (!isset($_SESSION['username'])) {
 
 					
 					
-					<!---second row ends-->
 					
 				</div>
 				
 
 
-			</section>
+			</section> -->
 
 			<!---Our Services Section Ends------->
 
