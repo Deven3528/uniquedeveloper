@@ -123,9 +123,9 @@ session_start();
 								<button id="btn-login" type="submit">Login</button>
 								
 							</div>
-							<div class="register">
+							<!-- <div class="register">
 								<h2>Don't have an account?&nbsp<span id="create-account"><a href="signup.html">Create</span></a> </h2>
-							</div>
+							</div> -->
 							
 						</form>
 					</div>
