@@ -226,7 +226,7 @@ if (!isset($_SESSION['username'])) {
          			<div class="section-title text-center">
          				<h2><b>CONTENTs</b></h2>
          				<p>
-         					Watch the Videos , Documents and Solve the MCQs provided by your teacher ! <br>this are the services provided by us
+         					Watch the Videos , Documents and Solve the MCQs provided by your teacher ! <br>
          				</p>
          			</div>
          		</div>
@@ -251,8 +251,7 @@ if (!isset($_SESSION['username'])) {
          				</div>
          				<h3><a href="video tutorials\java\display_video_courses.php">VIDEO TUTORIALS</a></h3>
          				<p>
-         					Here you will find all the videos tutorials related to programming languages 
-         					like JAVA,PYTHON,ANDROID etc
+         					Here you will find all the videos tutorial courses provided by your provider !
          				</p>
          			</div>
          		</div>
@@ -262,9 +261,20 @@ if (!isset($_SESSION['username'])) {
          				<div class="service-icon">
          					<i class="fa fa-laptop"></i>
          				</div>
-         				<h3><a href="online_quize/quizhome.php">EXERCISE</a></h3>   <!--  exercise/exercise.php -->
+         				<h3><a href="online_quize/quizhome.php">PRACTICE</a></h3>   <!--  exercise/exercise.php -->
          				<p>
-         					Here you will find problem programs for practice and their implementation also which will improve your coding skill
+         					Solve the MCQs provided by your provider and test your coding knowledge <!DOCTYPE html>
+							 <html lang="en">
+							 <head>
+								 <meta charset="UTF-8">
+								 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+								 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+								 <title>Document</title>
+							 </head>
+							 <body>
+								 
+							 </body>
+							 </html>
          				</p>
          			</div>
          		</div>
