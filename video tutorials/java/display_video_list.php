@@ -103,11 +103,11 @@ include "../../admin/includes/navbar.php";
 
 		<!-- footer section starts -->
 
-					<footer>
-					<?php 	
-					include "../../admin/includes/footer.php";
-					?>
-					</footer>
+					<!-- <footer>
+					//<?php 	
+					//include "../../admin/includes/footer.php";
+					//?>
+					</footer> -->
 		<!-- footer section ends -->
 
 </body>

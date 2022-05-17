@@ -110,11 +110,11 @@ include "../../admin/includes/navbar.php";
 
 <!-- footer section starts -->
 
-<footer style="margin-top: 90px;">
+<!-- <footer style="margin-top: 90px;">
 	 <?php 
- include "../../admin/includes/footer.php";
+//  include "../../admin/includes/footer.php";
   ?>
-</footer>
+</footer> -->
 
 <!-- footer section ends -->
 
