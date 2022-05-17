@@ -16,9 +16,8 @@ class users
 
 	public function __construct()               //it is the constructor called automatically when we create object
 	{
-		$this->conn=new mysql($this->host,$this->username,$this->pass,$this->db_name);
-		if ($this->conn->connect_errno) 
-		{
+		$this->conn=new mysqli($this->host,$this->username,$this->pass,$this->db_name);
+		if ($this->conn->connect_errno) {
 			die("database connection failed".$this->conn->connect_errno);
 		}
 	}
@@ -34,7 +33,7 @@ class users
 	{
 		
 		$query=$this->conn->query("select email,password from users where email='$email' and password='$pass'");
-		$query->fetch_array(mysqli_ASSOC);
+		$query->fetch_array(MYSQLI_ASSOC);
 
 		if ($query->num_rows>0) 
 		{	
@@ -51,7 +50,7 @@ class users
 	public function show_users_profile($email)  		 //function to diaplay the users profile
 	{
 		$query=$this->conn->query("select * from users where email='$email'");
-		$row=$query->fetch_array(mysqli_ASSOC);
+		$row=$query->fetch_array(MYSQLI_ASSOC);
 
 		if ($query->num_rows>0) 
 		{	
@@ -65,7 +64,7 @@ class users
 	{
 		$query=$this->conn->query("select * from category");
 
-		while($row=$query->fetch_array(mysqli_ASSOC))      // while loop to fetch all data one by one and store in cat_data array variable
+		while($row=$query->fetch_array(MYSQLI_ASSOC))      // while loop to fetch all data one by one and store in cat_data array variable
 		{	
 			$this->cat_data[]=$row;
 			
@@ -80,7 +79,7 @@ class users
 	{
 		$query=$this->conn->query("select * from question_test where course_id='$course_id'");
 
-		while($row=$query->fetch_array(mysqli_ASSOC))      // while loop to fetch all data one by one and store in cat_data array variable
+		while($row=$query->fetch_array(MYSQLI_ASSOC))      // while loop to fetch all data one by one and store in cat_data array variable
 		{	
 			$this->questios_details[]=$row;
 			
@@ -103,7 +102,7 @@ class users
 
 		$query=$this->conn->query("select id,answer from question_test where course_id='$course_id'");
 
-		while($row=$query->fetch_array(mysqli_ASSOC))      // while loop to fetch all data one by one and store in cat_data array variable
+		while($row=$query->fetch_array(MYSQLI_ASSOC))      // while loop to fetch all data one by one and store in cat_data array variable
 		{	
 			if ($row['answer']==$_POST[$row['id']])         //if answer is match
 			 {
