@@ -237,10 +237,9 @@ if (!isset($_SESSION['username'])) {
          				<div class="service-icon">
          					<i class="fa fa-leaf"></i>
          				</div>
-         				<h3><a href="programmingdemo.php">PROGRAMMING</a></h3>
+         				<h3><a href="programmingdemo.php">DOCUMENTS</a></h3>
          				<p>
-         					Here you will find all the lecture tutorials related to programming languages 
-         					like JAVA,PYTHON,ANDROID etc
+         					Get all the importand documents and theory notes by your provider here !
          				</p>
          			</div>
          		</div>

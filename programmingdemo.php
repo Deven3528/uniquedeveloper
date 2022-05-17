@@ -244,9 +244,10 @@ ul, ol {
  									</div>
 
  									<div class="news-content">
- 										<p>
+ 										<!-- <p>
  											<?php echo $res['language_description']; ?>
- 										</p><br>
+ 										</p><br> -->
+										 <br><br>
  										<a href="programming/java/java_programming.php?course_name=<?php echo $res['language_name'] ?>">Start Reading...</a>
  									</div>
  								</div>
