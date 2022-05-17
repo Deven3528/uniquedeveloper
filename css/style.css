@@ -126,7 +126,8 @@ ul li a:hover
 {
 	width: 100%;
 	height: 100vh;
-	background-image: url(..//img\joker.png);
+	background-image: url(https://bit.ly/3Lna5BE);
+	/* background-image: url(..//img\joker.png); */
 	background-size: cover;
 	background-position: center;	
 }

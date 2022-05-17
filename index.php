@@ -662,7 +662,7 @@ if (!isset($_SESSION['username'])) {
 
 <!------ Include the above in your HEAD tag ---------->
 
-<div class="row text-center">
+<!-- <div class="row text-center">
 	<h2><b>CONTACT US</b></h2><br><br>
 	<center>
 	<div class="card" style="width: 30rem;">
@@ -677,14 +677,14 @@ if (!isset($_SESSION['username'])) {
   <div class="form-group">
     <label id="msgaddtxt" for="exampleInputPassword1">message</label>
 	<textarea id="msgadd" class="form-control" rows="7" cols="40"></textarea>
-    <!-- <input type="password" class="form-control"  placeholder="enter your message"> -->
+    <!-- <input type="password" class="form-control"  placeholder="enter your message"> ->
   </div>
   
   <button onclick="sendEmail()" class="btn btn-primary">Submit</button>
 </form>
   </div>
 </div></center>
-</div>
+</div> -->
 
     
 
