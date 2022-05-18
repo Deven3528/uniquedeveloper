@@ -22,11 +22,20 @@ if (!isset($_SESSION['username'])) {
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 	<title>Code Strike</title>
 	<!----magnific popup css file for work section -->
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
 
 	<!----owlcarousel css file for our team section -->
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
 
 	<!----Linking google fonts-->
@@ -225,8 +234,8 @@ if (!isset($_SESSION['username'])) {
          	<div class="row">
          		<div class="col-xs-12">
          			<div class="section-title text-center">
-         				<h2><b>CONTENTs</b></h2>
-         				<p>
+         				<h2 style="font-family: 'Koulen', cursive; font-size: 50px;"><b>CONTENTs</b></h2>
+         				<p style="font-family: 'Ubuntu', sans-serif; font-size: 17px;">
          					Watch the Videos , Documents and Solve the MCQs provided by your teacher ! <br>
          				</p>
          			</div>
@@ -239,8 +248,8 @@ if (!isset($_SESSION['username'])) {
          					<i class="fa fa-leaf"></i>
          				</div>
          				<h3><a href="programmingdemo.php">DOCUMENTS</a></h3>
-         				<p>
-         					Get all the importand documents and theory notes by your provider here !
+         				<p style="font-family: 'Josefin Sans', sans-serif; font-size: 17px;">
+         					Get all the important documents and theory notes by your teacher here !
          				</p>
          			</div>
          		</div>
@@ -251,7 +260,7 @@ if (!isset($_SESSION['username'])) {
          					<i class="fa fa-laptop"></i>
          				</div>
          				<h3><a href="video tutorials\java\display_video_courses.php">VIDEO TUTORIALS</a></h3>
-         				<p>
+         				<p style="font-family: 'Josefin Sans', sans-serif; font-size: 17px;">
          					Here you will find all the videos tutorial courses provided by your provider !
          				</p>
          			</div>
@@ -263,7 +272,7 @@ if (!isset($_SESSION['username'])) {
          					<i class="fa fa-laptop"></i>
          				</div>
          				<h3><a href="online_quize/quizhome.php">PRACTICE</a></h3>   <!--  exercise/exercise.php -->
-         				<p>
+         				<p style="font-family: 'Josefin Sans', sans-serif; font-size: 17px;">
          					Solve the MCQs provided by your provider and test your coding knowledge <!DOCTYPE html>
 							 <html lang="en">
 							 <head>
@@ -475,9 +484,9 @@ if (!isset($_SESSION['username'])) {
 			<!---Our Team Section Start------->
 			<br><br><br>
 			<div class="container text-center" id="our-members">
-				<h2><b>MEMBERS</b></h2>
-				<p>
-					These are our excellent member .you can contact anyone anytime <br> and all are experts and well experienced !
+				<h2 style="font-family: 'Koulen', cursive; font-size: 50px;"><b>DEVLOPERS</b></h2>
+				<p style="font-family: 'Ubuntu', sans-serif; font-size: 15px;">
+					These are our excellent member. You can contact anyone anytime <br> and all are experts and well experienced !
 				</p>
 			</div>
 
@@ -490,7 +499,7 @@ if (!isset($_SESSION['username'])) {
 								<img src="img/sushant.jpeg" class="img-responsive">
 								<div class="team-member-info text-center">
 									<h4 class="team-member-name">Sushant Patil</h4>
-									<h4 class="team-member-designation">CEO of Project</h4>
+									<h4 class="team-member-designation">Project Lead</h4>
 									<ul class="social-list">
 										<li><a href="https://www.facebook.com/profile.php?id=100025764158388" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
 										<li><a href="https://twitter.com/Sushant26271702" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
