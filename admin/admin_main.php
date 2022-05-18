@@ -121,10 +121,10 @@ background: linear-gradient(to right, #F3A183, #EC6F66); /* W3C, IE 10+/ Edge, F
         <a class="nav-link disabled" href="#">Disabled</a>
       </li> -->
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <!-- <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    </form> -->
   </div>
 </nav>
 
@@ -137,7 +137,7 @@ background: linear-gradient(to right, #F3A183, #EC6F66); /* W3C, IE 10+/ Edge, F
         <div class="col-sm-2 col-md-2 sidebar badge-dark" style="margin:inherit;" id="sidebar" >
          <ul class="list-group text-white sidebar-list">
             <li class="list-group-item  bg-dark "><a href="">Welcome Admin</a></li>
-            <li class="list-group-item bg-dark "><a href="manage_courses/manage_courses.php">Manage Courses</a></li>
+            <li class="list-group-item bg-dark "><a href="manage_courses/manage_courses.php">Manage Notes</a></li>
             <li class="list-group-item bg-dark"><a href="manage_quiz\manage_quiz.php">Manage Quize</a></li>
             <li class="list-group-item bg-dark"><a href="manage_videos\manage_videos.php">Manage Videos</a></li>
             <!-- <li class="list-group-item bg-dark"><a href="">Manage Comments</a></li> -->
@@ -172,7 +172,7 @@ background: linear-gradient(to right, #F3A183, #EC6F66); /* W3C, IE 10+/ Edge, F
 
               <img class="myimg" src="../uploadimg/file3.png" alt="Card" width="288" height="200">
               <div class="card-body">
-                <p class="card-text"><a href="manage_courses/manage_courses.php" style="text-decoration: none;">MANAGE YOUR COURSE <i class="fa fa-book ml-3"></i></a></p>
+                <p class="card-text"><a href="manage_courses/manage_courses.php" style="text-decoration: none;">MANAGE YOUR NOTES<i class="fa fa-book ml-3"></i></a></p>
               </div>
             </div>
             
