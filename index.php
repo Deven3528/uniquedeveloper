@@ -102,7 +102,7 @@ if (!isset($_SESSION['username'])) {
 
 </head>
 <!-- <body onload="myfunction()" style="background-color:#679ddb;"> -->
-<body onload="myfunction()" style="background-color: #dfc1f5;">
+<body onload="myfunction()" style="background-color: #cccdcf;">
 		   <!---preloader starts	----->
 
 		   <div id="loading"></div>
@@ -249,7 +249,7 @@ if (!isset($_SESSION['username'])) {
          				</div>
          				<h3><a href="programmingdemo.php">DOCUMENTS</a></h3>
          				<p style="font-family: 'Josefin Sans', sans-serif; font-size: 17px;">
-         					Get all the important documents and theory notes by your teacher here !
+         					Get all the important documents , source code and theory notes by your teacher here !
          				</p>
          			</div>
          		</div>
@@ -549,16 +549,6 @@ if (!isset($_SESSION['username'])) {
 									</ul>
 								</div>
 							</div>
-
-
-							
-
-
-
-
-
-
-
 						</div>
 					</div>
 				</div>
