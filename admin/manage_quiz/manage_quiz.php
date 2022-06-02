@@ -1,4 +1,5 @@
 <?php 
+session_start();
 include("../classes/manage_quiz_class.php");
 $quiz=new manage_quiz_class;			// creating object of  manage_courses_class.php
     $quiz_list=$quiz->display_quiz_courses();   //calling display_courses() method from manage_courses_class.php
@@ -742,15 +743,35 @@ body {
 
                 <div class="card">
                     <div class="card-header">
-                        <h4>How to Import Excel Data into database in PHP</h4>
+                        <h4>Import Your Quiz Excel File</h4>
                     </div>
                     <div class="card-body">
 
                         <form action="code.php" method="POST" enctype="multipart/form-data">
 
                             <input type="file" name="import_file" class="form-control" />
-                            <button type="submit" name="save_excel_data" class="btn btn-primary mt-3">Import</button>
+                            <br>
+                            <select class="form-control" id="exampleFormControlSelect1" name="selected_course">
 
+      <?php 
+                                   //calling show_courses() method of users class
+       foreach ($quiz_list as $quiz) 
+       {
+         
+ ?>
+
+      <option value="<?php echo $quiz['id'] ;?>"><?php echo $quiz['cat_name']; ?></option>    <!-- displaying course name in dropdown -->
+    
+
+      <?php
+}
+
+      ?>
+    </select>
+    <br>
+          <button type="submit" name="save_excel_data" class="btn btn-primary mt-3">Import</button>
+                            <br><a href="demo.xlsx" download>Download the Proper Excel Format</a><br>
+                            
                         </form>
 
                     </div>

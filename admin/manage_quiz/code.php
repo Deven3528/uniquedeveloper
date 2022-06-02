@@ -16,6 +16,17 @@ if(isset($_POST['save_excel_data']))
     $file_ext = pathinfo($fileName, PATHINFO_EXTENSION);
 
     $allowed_ext = ['xls','csv','xlsx'];
+    $cat = $_POST['selected_course'];
+    $sub = 2;
+    if($cat=="java"){
+        $sub=2;
+    }
+    if($cat=="python"){
+        $sub=4;
+    }
+    if($cat=="DSU"){
+        $sub=15;
+    }
 
     if(in_array($file_ext, $allowed_ext))
     {
@@ -28,13 +39,16 @@ if(isset($_POST['save_excel_data']))
         {
             if($count > 0)
             {
-                $fullname = $row['0'];
-                $email = $row['1'];
-                $phone = $row['2'];
-                $course = $row['3'];
+                $question = $row['0'];
+                $opt1= $row['1'];
+                $opt2 = $row['2'];
+                $opt3 = $row['3'];
+                $opt4 = $row['4'];
+                $answer = $row['5'];
+                $answer = $answer-1;
 
-                $studentQuery = "INSERT INTO students (fullname,email,phone,course) VALUES ('$fullname','$email','$phone','$course')";
-                $result = mysqli_query($con, $studentQuery);
+                $studentQuery = "INSERT INTO question_test (question,opt1,opt2,opt3,opt4,answer,course_id) VALUES ('$question','$opt1','$opt2','$opt3','$opt4',$answer,$cat)";
+                $result = mysqli_query($conn, $studentQuery);
                 $msg = true;
             }
             else
