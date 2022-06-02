@@ -1,5 +1,7 @@
 <?php
 
+// Comment by sush
+
 
 session_start();
 
@@ -102,7 +104,8 @@ if (!isset($_SESSION['username'])) {
 
 </head>
 <!-- <body onload="myfunction()" style="background-color:#679ddb;"> -->
-<body onload="myfunction()" style="background-color: #cccdcf;">
+<!-- <body onload="myfunction()" style="background-color: #cccdcf;"> -->
+<body onload="myfunction()" style="background-color: #fff;">
 		   <!---preloader starts	----->
 
 		   <div id="loading"></div>
