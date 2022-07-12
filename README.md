@@ -1,5 +1,7 @@
 # uniquedeveloper
-This is the Capstone Project built by a team of 4 developers named Code-Strike
+This is the Capstone Project built named Code-Strike by a team of 4 developers 
+
+
 Developers - 
   1. Sushant Patil
   2. Deven Thorat
